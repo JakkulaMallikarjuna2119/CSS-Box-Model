@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Task</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9fb;
+            color: #333;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #1e3a8a;
+        }
+
+        .instructions {
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            background: #e2e8f0;
+            padding: 15px;
+            border-radius: 6px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .box-1 {
+           
+            background-color: #ffedd5; 
+            width: 300px;
+            padding: 20px;
+            border: 5px solid #ea580c;
+            margin: 15px auto;
+            box-sizing: content-box; 
+        }
+
+        
+        .box-2 {
+           
+            background-color: #dbeafe; 
+            width: 300px;
+            padding: 35px;
+            border: 8px dashed #2563eb; 
+            margin: 30px auto;
+            box-sizing: border-box; 
+        }
+        .box-3 {
+            background-color: #dcfce7;
+            width: 300px;
+            padding: 15px;
+            border: 4px dotted #16a34a; 
+            margin: 50px auto;
+            box-sizing: border-box;
+        }
+
+        .explanation {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 20px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+        }
+
+        .explanation ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .explanation li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Box Model & Box-Sizing Task</h1>
+    
+    <div class="instructions">
+        <strong>Task Overview:</strong> This webpage demonstrates the CSS Box Model components (Content, Padding, Border, and Margin) across 3 distinct boxes, highlighting the difference between <code>content-box</code> and <code>border-box</code>.
+    </div>
+
+    <div class="box-1">
+        <h3>Box 1: content-box</h3>
+        <p>This box uses <code>box-sizing: content-box</code>. Its total width will be 300px (content) + 40px (left/right padding) + 10px (left/right borders) = <strong>350px total width</strong>.</p>
+    </div>
+
+    <div class="box-2">
+        <h3>Box 2: border-box</h3>
+        <p>This box uses <code>box-sizing: border-box</code>. Its total width remains strictly <strong>300px</strong> because padding and borders are drawn inside the specified width.</p>
+    </div>
+
+    <div class="box-3">
+        <h3>Box 3: Custom Styling</h3>
+        <p>This box demonstrates unique padding, a dotted border style, a green background, and a larger outer margin.</p>
+    </div>
+    <div class="explanation">
+        <h3>Key Takeaways from the Output:</h3>
+        <ul>
+            <li><strong>Content:</strong> The actual text or inner elements inside each box.</li>
+            <li><strong>Padding:</strong> Creates space inside the box between the content and the border (each box uses unique padding values).</li>
+            <li><strong>Border:</strong> Outlines the box with different styles (solid, dashed, dotted), widths, and colors.</li>
+            <li><strong>Margin:</strong> Controls the spacing outside the boxes, keeping them separated from one another by different gaps (15px, 30px, and 50px).</li>
+            <li><strong>Box-Sizing Difference:</strong> With <code>content-box</code>, padding and borders expand the element's overall layout size. With <code>border-box</code>, the element respects the exact width you set.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
