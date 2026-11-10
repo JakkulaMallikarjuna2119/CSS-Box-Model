@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color Properties Task</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        .intro {
+            text-align: center;
+            color: #333333;
+        }
+
+        .section-name {
+            background-color: lightyellow; 
+            border: 2px solid orange; 
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .section-name h2 {
+            color: red; 
+        }
+        .section-name p {
+            color: green; 
+        }
+
+        
+        .section-hex {
+            background-color: #e8f4f8; 
+            border: 2px solid #2980b9; 
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .section-hex h2 {
+            color: #FF0000; 
+        }
+        .section-hex p {
+            color: #27ae60; 
+        }
+
+       
+        .section-rgb {
+            background-color: rgb(240, 230, 255); 
+            border: 2px solid rgb(128, 0, 128);
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .section-rgb h2 {
+            color: rgb(0, 0, 255); 
+        }
+        .section-rgb p {
+            color: rgb(150, 75, 0); 
+        }
+
+       
+        .section-rgba {
+           
+            background-color: rgba(255, 0, 0, 0.15); 
+        
+            border: 3px solid rgba(255, 0, 0, 0.6); 
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .section-rgba h2 {
+            color: rgb(180, 0, 0);
+        }
+        .section-rgba p {
+           
+            color: rgba(0, 0, 0, 0.7); 
+        }
+
+        
+        .section-hsl {
+            background-color: hsl(120, 60%, 90%); 
+            border: 2px solid hsl(120, 50%, 40%); 
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .section-hsl h2 {
+            color: hsl(0, 100%, 50%); 
+        }
+        .section-hsl p {
+            color: hsl(240, 100%, 30%); 
+        }
+
+        
+        .section-hsla {
+            
+            background-color: hsla(240, 100%, 50%, 0.1); 
+            
+            border: 3px dashed hsla(240, 100%, 50%, 0.5); 
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .section-hsla h2 {
+            color: hsla(280, 100%, 40%, 1);
+        }
+        .section-hsla p {
+            color: hsla(200, 100%, 20%, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Color Properties Demonstration</h1>
+    <p class="intro">This page showcases different CSS color formats, transparency effects, background colors, and border styles.</p>
+
+   
+    <div class="section-name">
+        <h2>1. Color Names Property</h2>
+        <p>This heading uses a standard color name ('red'), and this paragraph uses another standard color name ('green').</p>
+    </div>
+
+  
+    <div class="section-hex">
+        <h2>2. HEX Colors Property</h2>
+        <p>This section uses HEX code values for colors. The heading is colored with <code>#FF0000</code> and the paragraph uses <code>#27ae60</code>.</p>
+    </div>
+
+
+    <div class="section-rgb">
+        <h2>3. RGB Colors Property</h2>
+        <p>This section uses RGB values. The section background and border are defined using <code>rgb()</code> functions as well.</p>
+    </div>
+
+
+    <div class="section-rgba">
+        <h2>4. RGBA Colors (Transparency)</h2>
+        <p>This section experiments with the alpha channel (transparency) using <code>rgba()</code> for both the background color and the border to create a layered effect.</p>
+    </div>
+
+
+    <div class="section-hsl">
+        <h2>5. HSL Colors Property</h2>
+        <p>This section uses Hue, Saturation, and Lightness (<code>hsl()</code>) to style the headings, text, borders, and background.</p>
+    </div>
+
+    <div class="section-hsla">
+        <h2>6. HSLA Colors (Transparency)</h2>
+        <p>This final section utilizes <code>hsla()</code>, combining HSL values with an alpha transparency value to style background shading and dashed borders.</p>
+    </div>
+
+</body>
+</html>
